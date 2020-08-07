@@ -22,6 +22,11 @@ body, *{
     transition: 0.3s;
 }
 
+ul{
+    margin: 20px;
+    padding: 0px;
+}
+
 h1,
 h2,
 h3,
@@ -326,7 +331,11 @@ textarea {
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap:20px;
-    justify-content: center;
+    justify-items: center;
+}
+
+.post-wrapper div{
+    margin:0 auto;
 }
 
 .post{
@@ -477,8 +486,27 @@ textarea {
                             "right-column";
         overflow: hidden;
     }
-
     .right-column{
         justify-content: center;
+    }
+    #preview-shadow{
+        padding-left:25px;
+        padding-right: 11px;
+        width: 260px;
+        height: 200px;
+    }
+    #preview{
+        width: 220px;
+        height: 185px;
+    }
+    #preview h3{
+        margin-top:4px
+    }
+    .about-wrapper{
+        justify-items: center;
+    }
+    .about-me{
+        width: 290px;
+        text-align: center;
     }
 }
